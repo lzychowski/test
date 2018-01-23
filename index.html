@@ -17,11 +17,11 @@ $(function () {
     var accessToken = "3uLaVQrJwP21kaJjuErLNk5QE9TTtwtFA7LErPkhI32wZg6PYKUll05F-9_fkoK45CnUZ6qyVOXkvHGjRK-9ajm-CtR9J3r7d5zMfcl72IUJbtLy8yUpSZ-uHlpmWnYx"
     var queryURL = "https://api.yelp.com/v3/businesses/search?term=restaurant&location=boulder"; 
 
-    /*jQuery.ajaxPrefilter(function(options) {
+    jQuery.ajaxPrefilter(function(options) {
         if (options.crossDomain && jQuery.support.cors) {
             options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
         }
-    });*/
+    });
 
     $.ajax({
         type: "GET",
